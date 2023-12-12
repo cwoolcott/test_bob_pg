@@ -1,8 +1,10 @@
 const Sequelize = require("sequelize");
 require("dotenv").config();
 const sequelize = new Sequelize(
-  "postgres://bobs_cars_user:owdmWvgqTv3vOxV9aTHYTaVGwud9owGY@dpg-clrsvffqd2ns73dt0ub0-a.ohio-postgres.render.com/bobs_cars"
+  "postgres://bobs_cars_user:owdmWvgqTv3vOxV9aTHYTaVGwud9owGY@dpg-clrsvffqd2ns73dt0ub0-a.ohio-postgres.render.com/bobs_cars?ssl=true"
 );
+//?ssl=true
+
 // const sequelize = new Sequelize(
 //   process.env.DB_NAME,
 //   process.env.DB_USER,
