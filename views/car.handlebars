@@ -1,0 +1,15 @@
+ <h1>Car Detail</h1>
+ <a href="/"><-- GO BACK</a><br><br>
+ <img src="/images/{{image}}" style="width:600px; border:3"><br>
+    YEAR: {{year}}<br>
+    MAKE: {{make}}<br>
+    MODEL: {{model}}<br>
+    ${{price}}<br>
+    {{#if sold}}
+        <div style="color:red; font-size:24px">SOLD!!!!!</div>
+    {{/if}}
+    {{#unless sold}}
+        <button>BUY ME!!!!</button>
+    {{/unless}}
+
+    {{>footer}}

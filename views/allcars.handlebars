@@ -1,0 +1,11 @@
+<h1>{{shopTitle}}</h1>
+<h2>All Cars</h2>
+{{#if lastCar}}
+Last Car Viewed Was {{lastCar}}<br><br>
+{{/if}}
+
+{{#each allCars}}
+   {{>carlisting shopTitle=../shopTitle}}
+{{/each}}
+
+{{>footer}}
